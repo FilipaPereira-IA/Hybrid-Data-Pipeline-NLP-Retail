@@ -1,0 +1,1 @@
+SELECT * FROM perfil_clientes LIMIT 10;
