@@ -25,6 +25,6 @@ Através desta arquitetura, é possível responder a perguntas críticas como:
 - Abra o ficheiro retail_warehouse.db no DBeaver para consultas SQL.
 
 ### Resultados no DBeaver
-![Classificado_negativo](./Classificado_negativo.png)
-![Idade_média_sentimento](./Idade_média_sentimento.png)
-![Tabela](./Tabela.png)
+![Classificado Negativo](./Screenshots_DBeaver/Classificado_negativo.png)
+![Idade Média Sentimento](./Screenshots_DBeaver/Idade_média_sentimento.png)
+![Tabela](./Screenshots_DBeaver/Tabela.png)
