@@ -6,7 +6,6 @@ Este projeto implementa uma Arquitetura Híbrida de Dados desenhada para transfo
 - IA/NLP: Hugging Face Transformers (distilbert-base-uncased)
 - Bases de Dados: MongoDB (NoSQL) e SQLite (SQL)
 - Gestão de Dados: DBeaver
-- Visualização: Power BI
 
 # Arquitetura do Sistema
 O pipeline está dividido em três camadas principais:
@@ -23,4 +22,4 @@ Através desta arquitetura, é possível responder a perguntas críticas como:
 - Clone o repositório.
 - Instale as dependências: pip install -r requirements.txt.
 - Execute o pipeline: python projeto.py.
-- Abra o ficheiro retail_warehouse.db no DBeaver para consultas SQL ou no Power BI para visualização.
+- Abra o ficheiro retail_warehouse.db no DBeaver para consultas SQL.
