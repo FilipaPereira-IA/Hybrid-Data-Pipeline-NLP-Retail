@@ -23,3 +23,8 @@ Através desta arquitetura, é possível responder a perguntas críticas como:
 - Instale as dependências: pip install -r requirements.txt.
 - Execute o pipeline: python projeto.py.
 - Abra o ficheiro retail_warehouse.db no DBeaver para consultas SQL.
+
+### Resultados no DBeaver
+![Classificado_negativo](./Classificado_negativo.png)
+![Idade_média_sentimento](./Idade_média_sentimento.png)
+![Tabela](./Tabela.png)
