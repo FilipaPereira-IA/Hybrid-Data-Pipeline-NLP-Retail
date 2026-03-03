@@ -1,30 +1,26 @@
-# Inteligência de Sentimento no Retalho: Pipeline Híbrido de Dados
-Este projeto implementa uma Arquitetura Híbrida de Dados desenhada para transformar dados brutos de retalho e reviews de clientes em insights estratégicos, utilizando Inteligência Artificial (NLP) e armazenamento relacional.
+# Retail Sentiment Intelligence: Hybrid Data Pipeline
+This project implements a Hybrid Data Architecture designed to transform raw retail data and customer reviews into strategic insights, utilising Artificial Intelligence (NLP) and relational storage.
 
-# Stack Tecnológica
-- Linguagem: Python.
-- IA/NLP: Hugging Face Transformers (distilbert-base-uncased)
-- Bases de Dados: MongoDB (NoSQL) e SQLite (SQL)
-- Gestão de Dados: DBeaver
+This work was inspired by and grounded in the principles of Data Systems Engineering taught in the Master's in Artificial Intelligence, applying data integration methodologies and sentiment analysis for decision support.
 
-# Arquitetura do Sistema
-O pipeline está dividido em três camadas principais:
-- Ingestão (Landing Zone): Recolha de dados heterogéneos, incluindo perfis de clientes (CSV) e streaming de 10k reviews do IMDb através da biblioteca datasets.
-- Processamento (Enrichment): Utilização de um modelo de Deep Learning para análise de sentimento. O script processa o texto, classifica a polaridade (Positive/Negative) e integra os dados através de um customer_id único.
-- Data Warehouse (Storage): Os dados processados são injetados num banco de dados SQL (retail_warehouse.db), permitindo consultas estruturadas.
+# Technology Stack
+- Language: Python
+- AI/NLP: Hugging Face Transformers (distilbert-base-uncased)
+- Databases: MongoDB (NoSQL) and SQLite (SQL)
+- Data Management: DBeaver
 
-# Insights de Negócio
-Através desta arquitetura, é possível responder a perguntas como:
-- Qual a idade média dos clientes com sentimentos negativos?
-- Existe uma correlação entre o género do cliente e a satisfação com o produto?
+# System Architecture
+The pipeline is divided into three primary layers:
+- Ingestion (Landing Zone): Collection of heterogeneous data, including customer profiles (CSV) and streaming of 10k IMDb reviews via the datasets library.
+- Processing (Enrichment): Utilisation of a Deep Learning model for sentiment analysis. The script processes the text, classifies polarity (Positive/Negative), and integrates the data via a unique customer_id.
+- Data Warehouse (Storage): Processed data is injected into a SQL database (retail_warehouse.db), enabling structured querying.
 
-# Como Executar
-- Clone o repositório.
-- Instale as dependências: pip install -r requirements.txt.
-- Execute o pipeline: python projeto.py.
-- Abra o ficheiro retail_warehouse.db no DBeaver para consultas SQL.
+# Business Insights
+Through this architecture, it is possible to answer critical business questions such as:
+- What is the average age of customers with negative sentiments?
+- Is there a correlation between customer gender and product satisfaction?
 
-### Resultados no DBeaver
+### Results in DBeaver
 ![Classificado Negativo](./Screenshots_DBeaver/Classificado_negativo.png)
 ![Idade Média Sentimento](./Screenshots_DBeaver/Idade_média_sentimento.png)
 ![Tabela](./Screenshots_DBeaver/Tabela.png)
