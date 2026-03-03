@@ -12,7 +12,7 @@ This work was inspired by and grounded in the principles of Data Systems Enginee
 # System Architecture
 The pipeline is divided into three primary layers:
 - Ingestion (Landing Zone): Collection of heterogeneous data, including customer profiles (CSV) and streaming of 10k IMDb reviews via the datasets library.
-- Processing (Enrichment): Utilisation of a Deep Learning model for sentiment analysis. The script processes the text, classifies polarity (Positive/Negative), and integrates the data via a unique customer_id.
+- Processing (Enrichment): Use of a Deep Learning model for sentiment analysis. The script processes the text, classifies polarity (Positive/Negative), and integrates the data via a unique customer_id.
 - Data Warehouse (Storage): Processed data is injected into a SQL database (retail_warehouse.db), enabling structured querying.
 
 # Business Insights
