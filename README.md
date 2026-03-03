@@ -1,20 +1,20 @@
-# Retail Sentiment Intelligence: Hybrid Data Pipeline
+# Inteligência de Sentimento no Retalho: Pipeline Híbrido de Dados
 Este projeto implementa uma Arquitetura Híbrida de Dados desenhada para transformar dados brutos de retalho e reviews de clientes em insights estratégicos, utilizando Inteligência Artificial (NLP) e armazenamento relacional.
 
 # Stack Tecnológica
-- Linguagem: Python 3.x
+- Linguagem: Python.
 - IA/NLP: Hugging Face Transformers (distilbert-base-uncased)
 - Bases de Dados: MongoDB (NoSQL) e SQLite (SQL)
 - Gestão de Dados: DBeaver
 
 # Arquitetura do Sistema
 O pipeline está dividido em três camadas principais:
-- Ingestão (Landing Zone): Coleta de dados heterogéneos, incluindo perfis de clientes (CSV) e streaming de 10k reviews do IMDb através da biblioteca datasets.
+- Ingestão (Landing Zone): Recolha de dados heterogéneos, incluindo perfis de clientes (CSV) e streaming de 10k reviews do IMDb através da biblioteca datasets.
 - Processamento (Enrichment): Utilização de um modelo de Deep Learning para análise de sentimento. O script processa o texto, classifica a polaridade (Positive/Negative) e integra os dados através de um customer_id único.
-- Data Warehouse (Storage): Os dados processados são injetados num banco de dados SQL (retail_warehouse.db), permitindo consultas estruturadas de alta performance.
+- Data Warehouse (Storage): Os dados processados são injetados num banco de dados SQL (retail_warehouse.db), permitindo consultas estruturadas.
 
 # Insights de Negócio
-Através desta arquitetura, é possível responder a perguntas críticas como:
+Através desta arquitetura, é possível responder a perguntas como:
 - Qual a idade média dos clientes com sentimentos negativos?
 - Existe uma correlação entre o género do cliente e a satisfação com o produto?
 
